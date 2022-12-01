@@ -1,7 +1,7 @@
-.DEFAULT_GOAL := git-push
+.DEFAULT_GOAL := repo-push
 
-.PHONY: git-push
-git-push:
+.PHONY: repo-push
+repo-push:
 	@echo ">> checkout master branch, push to origin/master, switch back to develop"
 	# ensure we have internet connectivity...
 	ping -q -c1 -W1 4.2.2.2                   # quiet ping...
